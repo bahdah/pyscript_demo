@@ -1,0 +1,19 @@
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    <py-env>
+        - yfinance
+    </py-env>
+
+</head>
+
+<body>
+
+    <py-script>
+import yfinance as yf
+data = yf.download(tickers='UBER', period='1d', interval='1m')
+print(data)
+    </py-script>
+
+</body>
